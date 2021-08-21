@@ -1,8 +1,9 @@
-public class Main {
-    public static void main(String[] args) {
-        int Price = 15600;
-        int priceForOneMili = 20;
-        int totalMili = Price / priceForOneMili;
-        System.out.println("Полученные Вами мили: " + totalMili);
-    }
-}
+        public class Main {
+            public static void main(String[] args) {
+                BonusMilesService service = new BonusMilesService();
+                int finelMiles = service.calculate(15600, 20);
+                System.out.println(finelMiles);
+            }
+        }
+
+
